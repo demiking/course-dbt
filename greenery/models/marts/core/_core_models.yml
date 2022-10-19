@@ -1,0 +1,110 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: ""
+    columns:
+      - name: product_id
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: ""
+
+      - name: price
+        description: ""
+
+      - name: inventory
+        description: ""
+
+  - name: dim_users
+    description: ""
+    columns:
+      - name: user_id
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: phone_number
+        description: ""
+
+      - name: created_at
+        description: ""
+
+      - name: updated_at
+        description: ""
+
+      - name: address
+        description: ""
+
+      - name: country
+        description: ""
+
+      - name: zipcode
+        description: ""
+
+
+  - name: fact_orders
+    description: ""
+    columns:
+      - name: order_id
+        description: ""
+        tests:
+          - not_null
+
+      - name: user_id
+        description: ""
+
+      - name: created_at
+        description: ""
+
+      - name: order_cost
+        description: ""
+
+      - name: shipping_cost
+        description: ""
+
+      - name: order_total
+        description: ""
+
+      - name: shipping_service
+        description: ""
+
+      - name: estimated_delivery_at
+        description: ""
+
+      - name: delivered_at
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: quantity
+        description: ""
+
+      - name: discount
+        description: ""
+
+      - name: promo_status
+        description: ""
+
+      - name: est_days_to_delivery
+        description: ""
+
+      - name: actual_days_to_delivery
+        description: ""
+
+      - name: delivery_estimate_error
+        description: ""
